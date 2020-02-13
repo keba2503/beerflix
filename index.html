@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
     <title>Beerflix</title>
 </head>
 <body>
+    <nav class="navbar" id="app-navbar no search filter">      
+        <div class="logo">
+          <a href="./index.html"><img src="./src/image/icon.png" style="widows: 60px; height: 50px ;"></div></a> 
     
+         <input type="checkbox" id="burger-checkbox">
+         <label for="burger-checkbox" class="menu-movil"></label>      
+          <ul class="navbar-list">           
+    
+            <li class="navbar-items">
+              <div class="navbar-right-actions">
+              <div class="filter-container">
+                <form id="search-form" class="filter-input" novalidate>
+                  <input id="buscador"  required placeholder="search your beer" class="inputsearch" type="text">
+                  <button type="submit" class="buttonsearch">Search</button>
+                </form>
+              </div>
+              
+            </div>
+            </li>
+         </ul>         
+      </nav>
+    
+      <header>
+          <picture>
+            <source
+              srcset="
+                ./src/image/cervezas_320.jpg 320w,
+                ./src/image/cervezas_767.jpg 768w,
+                ./src/image/cervezas.jpg 1280w,
+              "
+              media="(min-width: 768px)">
+            <source
+              srcset="
+              ./src/image/cervezas_500.jpg
+              "
+              media="(min-width: 320px)">
+            <img src="./src/image/cervezas_100.jpg" alt="cervezas">
+          </picture>
+      </header>
+    
+      <main>
+        
+    
+    
+    
+    
+      </main>
+      <footer><ul class="navbar-list">
+        <li class="navbar-items"><a href="./index.html">2020 © KBO Diseñado por Karen Borrero</a></li>
+        
+    </ul></footer>
+    
+    <script></script>
+    
+
 </body>
 </html>

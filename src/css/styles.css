@@ -1,0 +1,51 @@
+
+@import "reset.css";
+
+
+
+@import "card.css";
+
+
+
+@import "navbar.css";
+
+* {
+  font-family: 'Roboto', Verdana;
+}
+
+
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:black;
+  color: white;
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+
+
+h1 {
+	width:100%;
+}
+
+
+
+
+
+header {
+  height: 100vh;
+  text-align: center;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  
+}
