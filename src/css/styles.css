@@ -1,51 +1,110 @@
-
-@import "reset.css";
-
-
-
+@import 'navbar.css';
+@import "beers.css";
+@import "button.css";
 @import "card.css";
+@import "input.css";
+@import "input.css";
+@import "layout.css";
+@import "login.css";
 
 
 
-@import "navbar.css";
-
-* {
-  font-family: 'Roboto', Verdana;
-}
-
-
-
-a {
-  color: initial;
-  text-decoration: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background:black;
-  color: white;
-  margin: 0;
-  font-family: "Montserrat";
-}
-
-
-
-h1 {
-	width:100%;
-}
-
-
-
-
-
-header {
-  height: 100vh;
-  text-align: center;
-  background-size: cover;
-  display: -ms-grid;
-  display: grid;
   
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: white;
+    color: black;
+    margin: 0;
+    font-family: "Montserrat";
+  }
+  
+  
+  header {
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+    display: -ms-grid;
+    display: grid;
+    margin-bottom: auto;
+    
+  }
+  .header picture {
+    opacity: 0.6;
+    width: 100%;
+  }
+  
+
+
+.main-layout.transparency {
+  background-color: #dedede;
+  height: 100%;
+}
+
+.filter-form-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  justify-content: space-around;
+  padding: 10px;
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+.filter-form-container .form-group {
+  width: 75%;
+  display: flex;
+}
+.filter-form-container .form-group input {
+  margin: 0 20px 0 0;
+}
+@media (min-width: 992px) {
+  .filter-form-container {
+    width: 30%;
+  }
+}
+
+.loading-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.loading-container.center {
+  align-items: center;
+}
+
+.loading-container.top {
+  align-items: flex-start;
+}
+
+.main-layout-beers {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.main-layout-beers.detail-container {
+  margin-top: 80px;
+}
+.main-layout-beers.transparency {
+  background-color: #dedede;
+  height: 100%;
+}
+@media (min-width: 992px) {
+  .main-layout-beers {
+    column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
+  }
+  .main-layout-beers.detail-container {
+    display: grid;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr;
+  }
 }
